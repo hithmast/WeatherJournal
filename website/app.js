@@ -54,9 +54,9 @@ const updateUI= async function() {
   let UI_Data = await getData("http://localhost:8000/projectData");
   
   //UI Update 
-  date_.innerText = UI_Data.date;
-  temp_.innerText = UI_Data.temp;
-  content_.innerText = UI_Data.content;
+  date_.innerHTML = UI_Data.date;
+  temp_.innerHTML = UI_Data.temp;
+  content_.innerHTML = UI_Data.content;
 }
 // FUNCTIONS 
 async function postData(url,data) {
